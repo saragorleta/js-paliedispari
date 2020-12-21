@@ -5,15 +5,14 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-se l'utente sceglie dispari e la somma è dispari ha vinto
-se l'utente sceglie pari e la somma è pari ha vinto
+// se l'utente sceglie dispari e la somma è dispari ha vinto
+// se l'utente sceglie pari e la somma è pari ha vinto
 
 var sceltaUtente= prompt('scegli pari o dispari');
 var numeroUtente=parseInt(prompt('inserisci un numero da 1 a 5'));//utente inserisce un numero da 1 a 5
 var numeroComputer=numeroRandom (1, 5);//il computer genera un numero da 1 a 5
 var somma= numeroUtente+numeroComputer;// creo una var somma
-var isPari=verificaPari(somma);// creo una var isPari. la var isPari corrisponde alla funzione verificaPari(somma) 
-
+var isPari=verificaPari(somma);// creo una var isPari. la var isPari corrisponde alla funzione verificaPari(somma)
 
 //ho sommato i due numeri
 console.log(numeroUtente+numeroComputer);
@@ -25,6 +24,7 @@ if(isPari==true && sceltaUtente=='pari'){
 else if (isPari==false && sceltaUtente=='dispari'){
   console.log('la somma risulta essere un numero dispari quindi hai vinto');
 }
+//dobbiamo dichiarare chi ha vinto
 //tutto questo si potrebbe scrivere con la forma contratta:
 //else {
 //console.log('Hai perso');
@@ -38,6 +38,7 @@ else if(isPari==false && sceltaUtente=='pari')
   console.log('la somma risulta essere un numero dispari, hai perso');
 }
 
+//***FUNZIONI***
 //ho creato la funzione per generare  numeri random
 function numeroRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
