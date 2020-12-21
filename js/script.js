@@ -31,10 +31,9 @@ else if (isPari==false && sceltaUtente=='dispari'){
 // ma per capire meglio mettiamo la forma completa:
 
 else if(isPari==true && sceltaUtente=='dispari'){
-else {
   console.log('la somma risulta essere un numero pari hai perso');
 }
-else if(isPari==false && sceltaUtente=='pari')
+else if(isPari==false && sceltaUtente=='pari'){
   console.log('la somma risulta essere un numero dispari, hai perso');
 }
 
