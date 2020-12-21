@@ -30,7 +30,7 @@ else if (isPari==false && sceltaUtente=='dispari'){
 //console.log('Hai perso');
 // ma per capire meglio mettiamo la forma completa:
 
-else if(isPari==true && sceltaUtente=='dispari' )
+else if(isPari==true && sceltaUtente=='dispari'){
 else {
   console.log('la somma risulta essere un numero pari hai perso');
 }
